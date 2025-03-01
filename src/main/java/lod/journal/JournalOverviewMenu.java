@@ -57,7 +57,7 @@ public class JournalOverviewMenu extends MenuScreen {
         renderText("Chests:", 80, 98, this.smallLeftFontOpts);
         renderText("%d/%d".formatted(this.unlockedChestCount, this.totalChestCount), 180, 98, this.smallRightFontOpts);
 
-        renderText("Beastiary:", 80, 108, this.smallLeftFontOpts);
+        renderText("Bestiary:", 80, 108, this.smallLeftFontOpts);
         renderText("0/0", 180, 108, this.smallRightFontOpts);
 
         renderText("Optional Events:", 80, 118, this.smallLeftFontOpts);

@@ -34,7 +34,7 @@ public class JournalMenu extends MenuScreen {
         this.menuTitleFontOpts = new FontOptions().horizontalAlign(HorizontalAlign.CENTRE).colour(TextColour.WHITE).shadowColour(TextColour.BLACK);
         this.addButton("Overview", this::showOverviewScreen);
         this.addButton("Locations", this::showLocationScreen);
-        this.addButton("Beastiary", this::showBeastiaryScreen);
+        this.addButton("Bestiary", this::showBestiaryScreen);
         this.setFocus(this.menuButtons.getFirst());
 
         this.bg = new QuadBuilder("")
@@ -116,8 +116,8 @@ public class JournalMenu extends MenuScreen {
     private void showLocationScreen(){
         this.showScreen(JournalLocationMenu::new);
     }
-    private void showBeastiaryScreen(){
-        this.showScreen(JournalBeastiaryMenu::new);
+    private void showBestiaryScreen(){
+        this.showScreen(JournalBestiaryMenu::new);
     }
     private void showScreen(final Function<Runnable, MenuScreen> screen) {
         this.getStack().pushScreen(screen.apply(() -> {
