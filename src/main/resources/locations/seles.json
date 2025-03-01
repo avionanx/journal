@@ -1,0 +1,8 @@
+{
+  "locationName": "Seles",
+  "chests": [{
+    "chestFlag": 0,
+    "registryId": "lod:healing_potion"
+  }],
+  "stardusts": [451]
+}
