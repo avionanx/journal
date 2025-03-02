@@ -10,14 +10,12 @@ import legend.game.inventory.screens.*;
 import legend.game.inventory.screens.controls.Button;
 import legend.game.types.Translucency;
 
-import java.awt.*;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 
 import static legend.core.GameEngine.RENDERER;
-import static legend.game.SItem.UI_TEXT_CENTERED;
 import static legend.game.Scus94491BpeSegment_8002.playMenuSound;
 import static legend.game.Scus94491BpeSegment_8002.renderText;
 
@@ -48,7 +46,7 @@ public class JournalMenu extends MenuScreen {
         float sizeY = 180.0f;
         float scaleX = 1.55f;
         this.matrix.scaling(sizeY * scaleX,sizeY, 1.0f);
-        this.matrix.transfer.set((368.0f - (sizeY * scaleX)) / 2.0f,(240 - sizeY) / 2.0f,344.0f);
+        this.matrix.transfer.set((368.0f - (sizeY * scaleX)) / 2.0f,(240 - sizeY) / 2.0f,200.0f);
     }
 
 
@@ -60,7 +58,7 @@ public class JournalMenu extends MenuScreen {
         queued.texture(this.texture).useTextureAlpha();
     }
 
-    private Button addButton(final String text, final Runnable onClick) {
+    private void addButton(final String text, final Runnable onClick) {
         final int index = this.menuButtons.size();
 
         final Button button = this.addControl(new Button(text));
@@ -71,7 +69,7 @@ public class JournalMenu extends MenuScreen {
             playMenuSound(1);
             this.setFocus(button);
         });
-
+        button.setTextColour(TextColour.GREY);
         button.onLostFocus(() -> button.setTextColour(TextColour.GREY));
         button.onGotFocus(() -> button.setTextColour(TextColour.WHITE));
 
@@ -107,7 +105,6 @@ public class JournalMenu extends MenuScreen {
         });
 
         this.menuButtons.add(button);
-        return button;
     }
 
     private void showOverviewScreen() {
