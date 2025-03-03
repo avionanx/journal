@@ -32,8 +32,8 @@ public class Location {
             String[] values;
             while ((values = csvReader.readNext()) != null) {
                 final int chestId = Integer.parseInt(values[0].trim());
-                String chestContent = values[1].trim();
-                this.chests.add(new ChestInfo(chestId, chestContent));
+                //String chestContent = values[1].trim();
+                this.chests.add(new ChestInfo(chestId, "todo"));
             }
         } catch (IOException | NullPointerException | CsvValidationException e) {
             throw new RuntimeException(e);

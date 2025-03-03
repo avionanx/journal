@@ -85,7 +85,7 @@ public class JournalLocationMenu extends MenuScreen {
         renderText("Chests:", 80, 88, this.smallLeftFontOpts);
         renderText("%d/%d".formatted(this.locationData.chests.stream().filter(ChestInfo::getIsObtained).count(), this.locationData.chests.size()), 180, 88, this.smallRightFontOpts);
 
-        renderText("Stardusts:", 80, 98, this.smallLeftFontOpts);
+        renderText("Stardust:", 80, 98, this.smallLeftFontOpts);
         renderText("%d/%d".formatted(this.locationData.stardusts.stream().filter(e -> e.isObtained).count(), this.locationData.stardusts.size()), 180, 98, this.smallRightFontOpts);
 
     }
