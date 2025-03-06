@@ -24,7 +24,6 @@ public class JournalLocationMenu extends MenuScreen {
 
     final Runnable unload;
     private final FontOptions shadowlessLeftFontOpts;
-    private final FontOptions shadowlessRightFontOpts;
 
     private Location locationData;
     private final HashMap<Integer, String> submapCutLocationMapping; // maps submap cuts to internal location names
@@ -34,7 +33,6 @@ public class JournalLocationMenu extends MenuScreen {
     public JournalLocationMenu(Runnable unload) {
         this.unload = unload;
         this.shadowlessLeftFontOpts = new FontOptions().horizontalAlign(HorizontalAlign.LEFT);
-        this.shadowlessRightFontOpts = new FontOptions().horizontalAlign(HorizontalAlign.RIGHT);
 
         this.submapCutLocationMapping = new HashMap<>();
 

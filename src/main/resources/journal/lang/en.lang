@@ -1,2 +1,11 @@
 # Global config
 journal.name=Journal
+lod.elements.fire.name=Fire
+lod.elements.earth.name=Earth
+lod.elements.wind.name=Wind
+lod.elements.light.name=Light
+lod.elements.dark.name=Darkness
+lod.elements.water.name=Water
+lod.elements.thunder.name=Thunder
+lod.elements.divine.name=Divine
+lod.elements.none.name=Neutral

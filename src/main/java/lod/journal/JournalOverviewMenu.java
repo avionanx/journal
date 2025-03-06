@@ -52,22 +52,22 @@ public class JournalOverviewMenu extends MenuScreen {
     protected void render() {
         renderText("Overview", 80, 58, this.shadowlessFontOpts);
 
-        renderText("Battles Cleared:", 80, 88, this.smallLeftFontOpts);
+        renderText("Battles Cleared", 80, 88, this.smallLeftFontOpts);
         renderText("0", 180, 88, this.smallRightFontOpts);
 
-        renderText("Enemies Defeated:", 80, 98, this.smallLeftFontOpts);
+        renderText("Enemies Defeated", 80, 98, this.smallLeftFontOpts);
         renderText("0", 180, 98, this.smallRightFontOpts);
 
-        renderText("Book Completion:", 80, 118, this.smallLeftFontOpts);
+        renderText("Book Completion", 80, 118, this.smallLeftFontOpts);
         renderText("0.0%", 180, 118, this.smallRightFontOpts);
 
-        renderText("Chests:", 80, 128, this.smallLeftFontOpts);
+        renderText("Chests", 80, 128, this.smallLeftFontOpts);
         renderText("%d/%d".formatted(this.unlockedChestCount, this.totalChestCount), 180, 128, this.smallRightFontOpts);
 
-        renderText("Bestiary:", 80, 138, this.smallLeftFontOpts);
+        renderText("Bestiary", 80, 138, this.smallLeftFontOpts);
         renderText("0/0", 180, 138, this.smallRightFontOpts);
 
-        renderText("Optional Events:", 80, 148, this.smallLeftFontOpts);
+        renderText("Optional Events", 80, 148, this.smallLeftFontOpts);
         renderText("0/0", 180, 148, this.smallRightFontOpts);
 
     }
